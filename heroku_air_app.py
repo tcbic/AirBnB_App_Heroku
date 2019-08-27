@@ -16,18 +16,17 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return flask.render_template('index.html')
+    return render_template('index.html')
 
 @app.route('/result', methods = ['POST'])
 def result():
     if request.method == 'POST':
         to_predict_list = request.form.to_dict()
         to_predict_list = list(to_predict_list.values())
-        to_predict_list = list(map(int, to_presict_list))
+        to_predict_list = list(map(int, to_predict_list))
 
         result = ValuePredictor(to_predict_list)
     return render_template("results.html", prediction=result)
 
 if __name__ == '__main__':
     app.run(port = 5000, debug = True)
-    
