@@ -14,7 +14,7 @@ def ValuePredictor(to_predict_list):
 
 app = Flask(__name__)
 
-@app.route('/home')
+@app.route('/')
 def index():
     return render_template('index.html')
 
@@ -27,10 +27,6 @@ def result():
 
         result = ValuePredictor(to_predict_list)
     return render_template("results.html", prediction=round(result, 2))
-
-#@app.route('/plot')
-#def plot():
-    #return render_template('berlin_airbnb.html')
 
 if __name__ == '__main__':
     app.run(port = 4500, debug = True)
