@@ -26,7 +26,7 @@ def result():
         to_predict_list = list(map(int, to_predict_list))
 
         result = ValuePredictor(to_predict_list)
-    return render_template("results.html", prediction=round(result, 2))
+    return render_template("results.html", prediction=round(int(result)))
 
 if __name__ == '__main__':
     app.run(port = 4500, debug = True)
