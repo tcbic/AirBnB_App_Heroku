@@ -1,15 +1,32 @@
 <html>
     <body>
-        <h1>Are you wondering how much to list a rental in Berlin, Germany for on AirBnB?</h1>
+        <h1>Wondering how much to list a rental in Berlin, Germany for on AirBnB?</h1>
         <h2>Fill out the features below to determine an optimal nightly rate.</h2>
         <div>
             <form action="/recommendation" method="POST">
                 <label for="neighborhood">Neighborhood</label>
-                <input type="text" id="neighborhood" name="neighborhood">
+                <select id="neighborhood" name="neighborhood">
+                        <option value=1>Friedrichshain-Kreuzberg</option>
+                        <option value=2>Mitte</option>
+                        <option value=3>Pankow</option>
+                        <option value=4>Neukölln</option>
+                        <option value=5>Charlottenburg-Wilm.</option>
+                        <option value=6>Tempelhof - Schöneberg</option>
+                        <option value=7>Lichtenberg</option>
+                        <option value=8>Treptow - Köpenick</option>
+                        <option value=9>Steglitz - Zehlendorf</option>
+                        <option value=10>Reinickendorf</option>
+                        <option value=11>Marzahn - Hellersdorf</option>
+                        <option value=12>Spandau</option>
+                    </select>
                 <br>
                 <br>
                 <label for="room_type">Type of Room</label>
-                <input type="text" id="room_type" name="room_type">
+                <select id="room_type" name="room_type">
+                        <option value=1>Entire Home/Apt</option>
+                        <option value=2>Private Room</option>
+                        <option value=3>Shared Room</option>
+                    </select>
                 <br>
                 <br>
                 <label for="accommodates">Accommodates</label>
@@ -24,20 +41,32 @@
                 <input type="text" id="number_of_reviews" name="number_of_reviews">
                 <br>
                 <br>
-                <label for="wifi">Wifi Included</label>
-                <input type="text" id="wifi" name="wifi">
+                <label for="wifi">Wifi</label>
+                <select id="wifi" name="wifi">
+                    <option value=1>Yes</option>
+                    <option value=0>No</option>
+                </select>
                 <br>
                 <br>
-                <label for="cable_tv">Cable TV Included</label>
-                <input type="text" id="cable_tv" name="cable_tv">
+                <label for="cable_tv">Cable TV</label>
+                <select id="cable_tv" name="cable_tv">
+                        <option value=1>Yes</option>
+                        <option value=0>No</option>
+                    </select>
                 <br>
                 <br>
-                <label for="washer">Washer Included</label>
-                <input type="text" id="washer" name="washer">
+                <label for="washer">Washer</label>
+                <select id="washer" name="washer">
+                        <option value=1>Yes</option>
+                        <option value=0>No</option>
+                    </select>
                 <br>
                 <br>
-                <label for="kitchen">Kitchen Included</label>
-                <input type="text" id="kitchen" name="kitchen">
+                <label for="kitchen">Kitchen</label>
+                <select id="kitchen" name="kitchen">
+                        <option value=1>Yes</option>
+                        <option value=0>No</option>
+                    </select>
                 <br>
                 <br>
                 <input type="submit" value="Submit">
