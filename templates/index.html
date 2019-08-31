@@ -1,37 +1,44 @@
 <html>
     <body>
-        <h1>Fill out the features below to determine an optimal price.</h1>
+        <h1>Are you wondering how much to list a rental in Berlin, Germany for on AirBnB?</h1>
+        <h2>Fill out the features below to determine an optimal nightly rate.</h2>
         <div>
-            <form action="/result" method="POST">
+            <form action="/recommendation" method="POST">
                 <label for="neighborhood">Neighborhood</label>
                 <input type="text" id="neighborhood" name="neighborhood">
+                <br>
                 <br>
                 <label for="room_type">Type of Room</label>
                 <input type="text" id="room_type" name="room_type">
                 <br>
+                <br>
                 <label for="accommodates">Accommodates</label>
                 <input type="text" id="accommodates" name="accommodates">
                 <br>
-                <label for="bathrooms">Number of Bathrooms</label>
-                <input type="text" id="bathrooms" name="bathrooms">
                 <br>
                 <label for="bedrooms">Number of Bedrooms</label>
                 <input type="text" id="bedrooms" name="bedrooms">
                 <br>
+                <br>
                 <label for="number_of_reviews">Number of Reviews</label>
                 <input type="text" id="number_of_reviews" name="number_of_reviews">
+                <br>
                 <br>
                 <label for="wifi">Wifi Included</label>
                 <input type="text" id="wifi" name="wifi">
                 <br>
+                <br>
                 <label for="cable_tv">Cable TV Included</label>
                 <input type="text" id="cable_tv" name="cable_tv">
+                <br>
                 <br>
                 <label for="washer">Washer Included</label>
                 <input type="text" id="washer" name="washer">
                 <br>
+                <br>
                 <label for="kitchen">Kitchen Included</label>
                 <input type="text" id="kitchen" name="kitchen">
+                <br>
                 <br>
                 <input type="submit" value="Submit">
             </form>
